@@ -1,7 +1,8 @@
-import { expect } from 'chai';
+const { expect } = require('chai');
+const { sut } = require('./sut.js');
 
 describe('repo', () => {
     it('is ready', () => {
-        expect(1 + 1).to.equal(2);
+        expect(sut()).to.equal(42);
     });
 });

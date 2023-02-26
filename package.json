@@ -3,9 +3,8 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
-    "type": "module",
     "scripts": {
-        "test": "mocha 'kata/*.spec.js'",
+        "test": "nyc mocha 'kata/*.spec.js'",
         "prettier:write": "npx prettier --write ."
     },
     "author": "",
@@ -16,6 +15,22 @@
         "mocha": "^10.0.0"
     },
     "devDependencies": {
+        "nyc": "^15.1.0",
         "prettier": "^2.8.4"
+    },
+    "nyc": {
+        "all": true,
+        "include": [
+            "kata/*.js"
+        ],
+        "excludeNodeModules": true,
+        "exclude": [
+            "kata/*.spec.js"
+        ],
+        "check-coverage": true,
+        "branches": 100,
+        "lines": 100,
+        "functions": 100,
+        "statements": 100
     }
 }

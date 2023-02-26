@@ -2,3 +2,5 @@ node_modules
 donald
 joe
 .tpr-*
+coverage
+.nyc_output

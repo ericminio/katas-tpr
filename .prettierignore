@@ -2,5 +2,7 @@ node_modules
 .tpr-*
 yop
 package-lock.json
+coverage
 donald
 joe
+.nyc_output
