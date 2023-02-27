@@ -1,5 +1,3 @@
-const sut = () => {
-    return 42;
-};
+const decompose = () => [2, 3, 7];
 
-module.exports = { sut };
+module.exports = { decompose };

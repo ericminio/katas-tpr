@@ -4,6 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "pretest": "clear",
         "test": "nyc mocha 'kata/*.spec.js'",
         "prettier:write": "npx prettier --write ."
     },
